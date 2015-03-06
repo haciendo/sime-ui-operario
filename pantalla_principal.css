@@ -1,0 +1,13 @@
+.pantalla{
+    display: none;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+	left:5px;
+	right:5px;
+}
+
+#pantalla_principal {
+	display: initial;
+	border: solid 1px black;
+}
