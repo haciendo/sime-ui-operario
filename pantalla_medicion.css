@@ -1,38 +1,32 @@
-
-#pantalla_principal {
-	display: initial;
-	border: solid 1px black;
-}
-
-#pantalla_principal
+.pantalla_medicion
 li.cota {
 	background-color: rgb(200,200,200);
 	border: solid 1px black;
 	height: 50px;
 }
 
-#pantalla_principal
+.pantalla_medicion
 li.siguiente{
 	background-color: rgb(130,130,230);
 	height: 100px;
 }
 
-#pantalla_principal
+.pantalla_medicion
 li.anterior{
 	height: 150px;
 }
 
-#pantalla_principal
+.pantalla_medicion
 li.paso{
 	background-color: rgb(130,230,130);
 }
 
-#pantalla_principal
+.pantalla_medicion
 li.no_paso{
 	background-color: rgb(230,130,130);
 }
 
-#pantalla_principal
+.pantalla_medicion
 li.cota
 svg.regla{
 	/*position: absolute;
@@ -42,5 +36,5 @@ svg.regla{
 	width: 100%;
 	height: 50px;
 	border: solid 1px;
+	display: none;
 }
-

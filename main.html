@@ -5,31 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="pantalla_principal.css" />
+        <link rel="stylesheet" href="pantalla_medicion.css" />
 
 		<title>UI Operario</title>
 	</head>
 	
 	<body>
-		<div id="pantalla_principal" class="pantalla">
-			<ul id="lista_cotas">
-				
-			</ul>
+		<div id="pantalla_login" class="pantalla">
+			<input id="idOperario" type="text" class="input_login" placeholder="Operario">   
+			<input id="password" type="password" class="input_login" placeholder="contraseña"/>
+			<input id="boton_ingresar" type="button" value="Entrar"/>
 		</div>
+		
+		<div id="pantalla_seleccion_pieza" class="pantalla">
+			<select id="select_pieza">
+			  <option value="1">PIEZA RRHH 3</option>
+			  <option value="2">CAÑETE RRHH 3</option>
+			  <option value="3">COCARDA PIRUL 889</option>
+			  <option value="4">BASTAGO 43</option>
+			</select>
+			<input id="boton_seleccionar" type="button" value="Seleccionar"/>
+		</div>
+		
 		<div id="plantillas">
-			<li id="plantilla_cota" class="cota">
-				<div class="desc_cota">
-					Descripcion de la cota de ejemplo
-				</div>
-				<div class="desc_instrumento">
-					Descripcion del instrumento de ejemploo
-				</div>
-				<div class="valorMedicion">
-					25.335
-				</div>
-				<svg class="regla" >
-				</svg>
-			</li>
+			
+			<div id="plantilla_pantalla_medicion" class="pantalla pantalla_medicion">
+				<ul class="lista_cotas">
+					
+				</ul>
+			</div>
+			
+			<ul>
+				<li id="plantilla_cota" class="cota">
+					<div class="desc_cota">
+						Descripcion de la cota de ejemplo
+					</div>
+					<div class="desc_instrumento">
+						Descripcion del instrumento de ejemploo
+					</div>
+					<div class="valorMedicion">
+						25.335
+					</div>
+					<svg class="regla" >
+					</svg>
+				</li>
+			<ul>
 			
 		</div>
 		
@@ -45,6 +65,10 @@
     <script type="text/javascript" src="snap.svg-min.js"></script>
 	
 	<script type="text/javascript" src="main.js"></script> 
+	
+	<script type="text/javascript" src="pantalla_login.js"></script> 
+	<script type="text/javascript" src="pantalla_seleccion_pieza.js"></script> 
+	<script type="text/javascript" src="pantalla_medicion.js"></script> 
     
     <script type="text/javascript" src="phonegap.js"></script>
 </html>
