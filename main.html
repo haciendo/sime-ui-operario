@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="pantalla_principal.css" />
 
 		<title>UI Operario</title>
@@ -11,8 +12,27 @@
 	
 	<body>
 		<div id="pantalla_principal" class="pantalla">
-			fafafasfa
+			<ul id="lista_cotas">
+				
+			</ul>
 		</div>
+		<div id="plantillas">
+			<li id="plantilla_cota" class="cota">
+				<div class="desc_cota">
+					Descripcion de la cota de ejemplo
+				</div>
+				<div class="desc_instrumento">
+					Descripcion del instrumento de ejemploo
+				</div>
+				<div class="valorMedicion">
+					25.335
+				</div>
+				<svg class="regla" >
+				</svg>
+			</li>
+			
+		</div>
+		
 	</body>
     
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
@@ -22,7 +42,9 @@
     
 	<script type="text/javascript" src="vortex.min.js"></script> 
 	
-    <script type="text/javascript" src="main.js"></script> 
+    <script type="text/javascript" src="snap.svg-min.js"></script>
+	
+	<script type="text/javascript" src="main.js"></script> 
     
     <script type="text/javascript" src="phonegap.js"></script>
 </html>

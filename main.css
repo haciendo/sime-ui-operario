@@ -1,0 +1,17 @@
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+div.pantalla{
+    display: none;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+	left:5px;
+	right:5px;
+}
+
+#plantillas{
+	display: none;
+}
