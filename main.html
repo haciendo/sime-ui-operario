@@ -5,52 +5,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="pantalla_login.css" />
+        <link rel="stylesheet" href="barra_superior.css" />
+        <link rel="stylesheet" href="pantalla_seleccion_tipopieza.css" />
         <link rel="stylesheet" href="pantalla_medicion.css" />
 
 		<title>UI Operario</title>
 	</head>
 	
 	<body>
+		
 		<div id="pantalla_login" class="pantalla">
-			<input id="idOperario" type="text" class="input_login" placeholder="Operario">   
-			<input id="password" type="password" class="input_login" placeholder="contraseña"/>
+			<div id="marca_sime">SIME</div>
+			<input id="nombre" type="text" class="input_login" placeholder="Usuario">   
+			<input id="pass" type="password" class="input_login" placeholder="Contraseña"/>
 			<input id="boton_ingresar" type="button" value="Entrar"/>
 		</div>
 		
-		<div id="pantalla_seleccion_pieza" class="pantalla">
-			<select id="select_pieza">
-			  <option value="1">PIEZA RRHH 3</option>
-			  <option value="2">CAÑETE RRHH 3</option>
-			  <option value="3">COCARDA PIRUL 889</option>
-			  <option value="4">BASTAGO 43</option>
-			</select>
-			<input id="boton_seleccionar" type="button" value="Seleccionar"/>
+		<div id="barra_superior">
+			<div id="mensaje">
+			</div>
+			<div id="link_salir" class="link_pantalla">
+				X
+			</div>
+			<div id="link_pantalla_instrumentos" class="link_pantalla">
+				I
+			</div>
+			<div id="link_pantalla_seleccion_tipopieza" class="link_pantalla">
+				P
+			</div>
+		</div>
+		
+		<div id="pantalla_seleccion_tipopieza" class="pantalla">
+			<input id="textoBusqueda"/>
+			<ul class="lista_tipopiezas lista">
+			
+			</ul>
+		</div>
+		
+		<div id="pantalla_instrumentos" class="pantalla">
+			<input id="textoBusqueda"/>
+			<ul class="lista_instrumentos lista">
+			
+			</ul>
 		</div>
 		
 		<div id="plantillas">
 			
 			<div id="plantilla_pantalla_medicion" class="pantalla pantalla_medicion">
+				<div class="toolbar">
+					<img src="">
+					</img>
+					
+				</div>
 				<ul class="lista_cotas">
 					
 				</ul>
 			</div>
 			
-			<ul>
-				<li id="plantilla_cota" class="cota">
-					<div class="desc_cota">
-						Descripcion de la cota de ejemplo
-					</div>
-					<div class="desc_instrumento">
-						Descripcion del instrumento de ejemploo
-					</div>
-					<div class="valorMedicion">
-						25.335
-					</div>
-					<svg class="regla" >
-					</svg>
-				</li>
-			<ul>
 			
+			<li id="plantilla_cota" class="cota">
+				<div class="desc_cota">
+					Descripcion de la cota de ejemplo
+				</div>
+				<div class="desc_instrumento">
+					Descripcion del instrumento de ejemploo
+				</div>
+				<div class="valorMedicion">
+					25.335
+				</div>
+				<svg class="regla" >
+				</svg>
+			</li>
+			
+			<li id="plantilla_tipo_pieza" class="tipo_pieza">
+				Descripcion del tipo de pieza de ejemplo
+			</li>
+			
+			<li id="plantilla_instrumento" class="instrumento">
+				Descripcion del tipo de instrumento de ejemplo
+			</li>
 		</div>
 		
 	</body>
@@ -67,8 +101,10 @@
 	<script type="text/javascript" src="main.js"></script> 
 	
 	<script type="text/javascript" src="pantalla_login.js"></script> 
-	<script type="text/javascript" src="pantalla_seleccion_pieza.js"></script> 
+	<script type="text/javascript" src="pantalla_instrumentos.js"></script>
+	<script type="text/javascript" src="pantalla_seleccion_tipopieza.js"></script> 
 	<script type="text/javascript" src="pantalla_medicion.js"></script> 
+	<script type="text/javascript" src="barra_superior.js"></script> 
     
     <script type="text/javascript" src="phonegap.js"></script>
 </html>

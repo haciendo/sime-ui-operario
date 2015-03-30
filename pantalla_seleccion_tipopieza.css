@@ -1,0 +1,11 @@
+#pantalla_seleccion_tipopieza
+li.tipopieza {
+	background-color: rgb(200,200,200);
+	border: solid 1px black;
+	height: 50px;
+}
+
+#pantalla_seleccion_tipopieza
+li.seleccionada{
+	background-color: rgb(130,130,230);
+}

@@ -14,12 +14,8 @@ $(document).ready(function() {
 
 var onDeviceReady = function() {
     
-	vx.start({verbose:false});
-    
-	vx.conectarPorWebSockets({
-		url: 'https://sime-backend.herokuapp.com'
-	});
-	/**************/
+	
+	Vx.conectarCon(new NodoConectorSocket('https://sime-backend.herokuapp.com'));
 	
 	pantalla_login();
 	

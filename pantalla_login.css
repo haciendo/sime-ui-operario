@@ -1,0 +1,47 @@
+#pantalla_login{
+	position: absolute;
+    top: 0px;
+    bottom: 0px;
+	left:0px;
+	right:0px;
+	background-color: rgb(246, 178, 107);
+}
+
+#pantalla_login
+#nombre{
+	position: absolute;
+	width: 200px;
+	top: 30%;
+	margin-left: -100px;
+	left: 50%;
+}
+
+#pantalla_login
+#pass{
+	position: absolute;
+	width: 200px;
+	top: 36%;
+	margin-left: -100px;
+	left: 50%;
+}
+
+
+#pantalla_login
+#boton_ingresar{
+	position: absolute;
+	width: 100px;
+	top: 45%;
+	margin-left: -50px;
+	left: 50%;
+}
+
+#pantalla_login
+#marca_sime{
+	font-family: sans-serif;
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	left: 7px;
+	top: 3px;
+}

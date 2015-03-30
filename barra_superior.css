@@ -1,0 +1,22 @@
+
+#barra_superior{
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 24px;
+	border: solid 1px;
+	display: none;
+	background-color: rgb(246, 178, 107);
+}
+
+#barra_superior
+.link_pantalla{
+	display: inline-table;
+	border: solid 1px;
+	width: 20px;
+	height: 18px;
+	text-align: center;
+	float: right;
+	vertical-align: middle;
+}
