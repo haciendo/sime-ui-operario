@@ -1,22 +1,34 @@
 var barra_superior = function(){
-	//TODO: solo analizar: Codigo de la barra ver de sacar a otro archivo
-	$('#barra_superior').show();
 	
-	$('#link_pantalla_seleccion_tipopieza').on('click', function(){
+	var $barra = $('#barra_superior');
+	$barra.show();
+	
+	$barra.find('#link_pantalla_seleccion_tipopieza').on('click', function(){
 		$('.pantalla').hide();
 		$('#pantalla_seleccion_tipopieza').show();
+		
+		$barra.find('.link_pantalla').removeClass('selected');
+		$(this).addClass('selected');
+		
 	});
-	$('#link_pantalla_instrumentos').on('click', function(){
+	
+	$barra.find('#link_pantalla_instrumentos').on('click', function(){
 		$('.pantalla').hide();
 		$('#pantalla_instrumentos').show();
+		
+		$barra.find('.link_pantalla').removeClass('selected');
+		$(this).addClass('selected');
 	});
 	
 	
-	$('#link_salir').on('click', function(){
+	$barra.find('#link_salir').on('click', function(){
 		datos = {};
 		$('#barra_superior').hide();
 		$('.pantalla').hide();
 		$('#pantalla_login').show();
+		
+		$barra.find('.link_pantalla').removeClass('selected');
+		$(this).addClass('selected');
 		
 	});
 };

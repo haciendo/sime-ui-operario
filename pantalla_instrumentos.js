@@ -14,9 +14,6 @@ var pantalla_instrumentos = function() {
 		$pantalla.find('.lista_instrumentos').append($instrumento);
 		$instrumento.show();
 		
-		console.log('$instrumento');
-		console.log($instrumento.html());
-		
 		$instrumento.text(instrumento.descripcion);
 		
 		
@@ -33,8 +30,8 @@ var pantalla_instrumentos = function() {
 			tipoDeMensaje:"medicionAislada",
 			idInstrumento: instrumento.idInstrumento
 		},function(mensaje){
-			if(piezaSeleccionada){
-				piezaSeleccionada.pantalla_medicion.recibirMedicionAislada(mensaje);
+			if(piezaSelected){
+				piezaSelected.pantalla_medicion.recibirMedicionAislada(mensaje);
 			}
 		});
 		

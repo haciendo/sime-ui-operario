@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="pantalla_login.css" />
         <link rel="stylesheet" href="barra_superior.css" />
         <link rel="stylesheet" href="pantalla_seleccion_tipopieza.css" />
+        <link rel="stylesheet" href="pantalla_instrumentos.css" />
         <link rel="stylesheet" href="pantalla_medicion.css" />
 
 		<title>UI Operario</title>
@@ -37,14 +38,14 @@
 		</div>
 		
 		<div id="pantalla_seleccion_tipopieza" class="pantalla">
-			<input id="textoBusqueda"/>
+			<input class="textoBusqueda" placeholder="Buscar tipos de pieza aquí"/>
 			<ul class="lista_tipopiezas lista">
 			
 			</ul>
 		</div>
 		
 		<div id="pantalla_instrumentos" class="pantalla">
-			<input id="textoBusqueda"/>
+			<input class="textoBusqueda" placeholder="Agregar instrumentos por aquí"/>
 			<ul class="lista_instrumentos lista">
 			
 			</ul>
@@ -54,10 +55,15 @@
 			
 			<div id="plantilla_pantalla_medicion" class="pantalla pantalla_medicion">
 				<div class="toolbar">
-					<img src="">
+					<img class="flecha_izq" src="flecha_izq.png">
 					</img>
-					
+					<div class="desc_pieza">
+						Descripción de la pieza
+					</div>
+					<img class="flecha_der" src="flecha_der.png">
+					</img>
 				</div>
+				
 				<ul class="lista_cotas">
 					
 				</ul>
@@ -68,17 +74,18 @@
 				<div class="desc_cota">
 					Descripcion de la cota de ejemplo
 				</div>
-				<div class="desc_instrumento">
-					Descripcion del instrumento de ejemploo
-				</div>
 				<div class="valorMedicion">
 					25.335
+				</div>
+				<div class="desc_instrumento">
+					Descripcion del instrumento de ejemploo
 				</div>
 				<svg class="regla" >
 				</svg>
 			</li>
 			
-			<li id="plantilla_tipo_pieza" class="tipo_pieza">
+			
+			<li id="plantilla_tipopieza" class="tipopieza">
 				Descripcion del tipo de pieza de ejemplo
 			</li>
 			

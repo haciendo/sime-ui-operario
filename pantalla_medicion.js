@@ -41,13 +41,13 @@ var pantalla_medicion = function(idTipoPieza) {
 		
 		cota.ui = $cota;
 		
+		console.log('cota');
+		console.log(cota);
+		
 		
 	};
 	
 	var setCotaSiguiente = function(cota){
-		console.log("setCotaSiguiente cota");
-		console.log(cota);
-		
 		
 		self.cotaSiguiente = cota;
 		$('.cota').removeClass('siguiente');
@@ -55,70 +55,12 @@ var pantalla_medicion = function(idTipoPieza) {
 	};
 	
 	
-	
-	
-	
-	/**************************************************************************/
-	//TODO: pedir al charles que me mande las cotas de la base (en principio hardcoded)
-	/*
-	var listaCotas_SIMULADA_DESARROLLO = [
-		{
-			idCota: 1,
-			descripcion: 'Cota costadito',
-			instrumento: {
-				idInstrumento: 111,
-				descripcion: "Micrometro Mitutoyo Verde"
-			},
-			valor: 15.50,
-			max: 16.00,
-			min: 15.00
-		},
-		{
-			idCota: 2,
-			descripcion: 'Largo pitorro',
-			instrumento: {
-				idInstrumento: 111,
-				descripcion: "Micrometro Peter Naranja"
-			},
-			valor: 15.50,
-			max: 16.00,
-			min: 15.00
-		},
-		{
-			idCota: 3,
-			descripcion: 'Ancho guraco',
-			instrumento: {
-				idInstrumento: 111,
-				descripcion: "Calibre 38 Colt"
-			},
-			valor: 15.50,
-			max: 16.00,
-			min: 15.00
-		},
-		{
-			idCota: 4,
-			descripcion: 'Profundidad guraco',
-			instrumento: {
-				idInstrumento: 111,
-				descripcion: "Micrometro Mitutoyo Violeta"
-			},
-			valor: 15.50,
-			max: 16.00,
-			min: 15.00
-		}
-	];
-	
-	
-	_.each(listaCotas_SIMULADA_DESARROLLO, function(cota){
-		agregarCota(cota);
-	})
-	*/
-	/**************************************************************************/
-	
 	Vx.send({
 		tipoDeMensaje: 'buscarCotas',
 		idTipoPieza: this.idTipoPieza
 	}, function(mensaje){
+		
+		$pantalla.find('.lista_cotas').empty();
 		
 		_.each(mensaje.cotas, function(cota){
 			agregarCota(cota);

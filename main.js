@@ -19,12 +19,6 @@ var onDeviceReady = function() {
 	
 	pantalla_login();
 	
-	//DEBUG
-	$('body').on('click', function(){
-		
-	});
-	
-	
 	
 	if(window.plugin){
 		window.plugin.backgroundMode.enable();

@@ -1,9 +1,10 @@
 var listaPiezas = [];
-var piezaSeleccionada;
+var piezaSelected;
 
 var pantalla_seleccion_tipopieza = function() {
 	
-	$pantalla = $('#pantalla_seleccion_tipopieza');
+	var $pantalla = $('#pantalla_seleccion_tipopieza');
+	$pantalla.find('ul.lista_tipopiezas').empty();
 	
 	
 	var agregarTipoPieza = function(tipoPieza){
@@ -11,7 +12,7 @@ var pantalla_seleccion_tipopieza = function() {
 		tipoPieza.index = listaPiezas.length-1;
 		
 		
-		var $tipoPieza = $('#plantilla_tipo_pieza')
+		var $tipoPieza = $('#plantilla_tipopieza')
 					.clone()
 					.attr('id', 'idPieza_' + tipoPieza.idTipoPieza);
 		
@@ -34,12 +35,15 @@ var pantalla_seleccion_tipopieza = function() {
 				tipoPieza.pantalla_medicion.show();
 			}
 			
-			piezaSeleccionada = tipoPieza;
+			piezaSelected = tipoPieza;
+			
+			$pantalla.find('.tipopieza').removeClass('selected');
+			$(this).addClass('selected');
 		});
 	
 	};
 	
-	$pantalla.find('#textoBusqueda').on('keypress', function(e){ 
+	$pantalla.find('input.textoBusqueda').on('keypress', function(e){ 
 		
 		Vx.send({
 			idUsuario: datos.idUsuario,

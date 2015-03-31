@@ -1,5 +1,5 @@
-#pantalla_seleccion_tipopieza
-li.tipopieza {
+#pantalla_instrumentos
+li.instrumento {
 	background-color: rgb(200,200,200);
 	border: solid 1px black;
 	height: 30px;
@@ -8,12 +8,12 @@ li.tipopieza {
 	padding-top: 5px;
 }
 
-#pantalla_seleccion_tipopieza
+#pantalla_instrumentos
 li.selected{
 	background-color: rgb(130,130,230);
 }
 
-#pantalla_seleccion_tipopieza
+#pantalla_instrumentos
 input.textoBusqueda{
 	position: absolute;
 	width: 200px;
@@ -21,8 +21,8 @@ input.textoBusqueda{
 	left: 4px;
 }
 
-#pantalla_seleccion_tipopieza
-ul.lista_tipopiezas{
+#pantalla_instrumentos
+ul.lista_instrumentos{
 	position: absolute;
 	top: 38px;
 	right: 0px;
