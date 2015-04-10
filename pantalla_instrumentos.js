@@ -26,10 +26,13 @@ var pantalla_instrumentos = function() {
 		}
 		*/
 		
+		
+		
 		Vx.when({
 			tipoDeMensaje:"medicionAislada",
 			idInstrumento: instrumento.idInstrumento
 		},function(mensaje){
+			
 			if(piezaSelected){
 				piezaSelected.pantalla_medicion.recibirMedicionAislada(mensaje);
 			}

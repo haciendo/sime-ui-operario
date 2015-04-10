@@ -30,7 +30,8 @@ var pantalla_seleccion_tipopieza = function() {
 			$('#pantalla_medicion').hide();
 			
 			if(tipoPieza.pantalla_medicion === undefined){
-				tipoPieza.pantalla_medicion = new pantalla_medicion(tipoPieza.idTipoPieza);
+				tipoPieza.pantalla_medicion = new pantalla_medicion(tipoPieza);
+				
 			} else {
 				tipoPieza.pantalla_medicion.show();
 			}

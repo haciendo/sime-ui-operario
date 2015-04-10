@@ -1,44 +1,3 @@
-.pantalla_medicion
-li.cota {
-	background-color: rgb(200,200,200);
-	border: solid 1px black;
-	height: 50px;
-}
-
-.pantalla_medicion
-li.siguiente{
-	background-color: rgb(130,130,230);
-	height: 100px;
-}
-
-.pantalla_medicion
-li.anterior{
-	height: 150px;
-}
-
-.pantalla_medicion
-li.paso{
-	background-color: rgb(130,230,130);
-}
-
-.pantalla_medicion
-li.no_paso{
-	background-color: rgb(230,130,130);
-}
-
-.pantalla_medicion
-li.cota
-svg.regla{
-	/*position: absolute;
-	left: 20px;
-	top: 20px;*/
-	
-	width: 100%;
-	height: 50px;
-	border: solid 1px;
-	display: none;
-}
-
 
 .pantalla_medicion
 div.toolbar{
@@ -78,9 +37,193 @@ img.flecha_der{
 }
 
 .pantalla_medicion
-ul.lista_cotas{
+div.lista_cotas_container{
 	position: absolute;
 	top: 25px;
 	right: 0px;
 	left: 0px;
+	bottom: 0px;
+	
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.pantalla_medicion
+ul.lista_cotas{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota {
+	background-color: rgb(200,200,200);
+	border-bottom: solid 3px;
+	border-bottom-color: rgb(170,170,170);
+	height: 50px;
+	position: relative;
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota 
+div.valorMedicion{
+	display: none;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota
+div.unidad{
+	position: absolute;
+	right: 3px;
+	top: 3px;
+}
+
+
+
+/*:ACTUAL:*/
+
+.pantalla_medicion
+ul.lista_cotas
+li.actual{
+	background-color: rgb(170,170,230);
+	border-bottom-color: rgb(140,140,200);
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota/*actual*/
+div.base{
+	display: initial;
+	position: absolute;
+	right: 190px;
+	top: 20px;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota/*actual*/
+div.tolMax{
+	display: initial;
+	position: absolute;
+	right: 130px;
+	top: 15px;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota/*actual*/
+div.tolMin{
+	display: initial;
+	position: absolute;
+	right: 130px;
+	top: 30px;
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota/*actual*/
+div.precision{
+	display: initial;
+	position: absolute;
+	right: 70px;
+	top: 20px;
+}
+
+
+/*:COMPLETA:*/
+.pantalla_medicion
+ul.lista_cotas
+li.completa
+div.valorMedicion{
+	display: initial;
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	font-size: 20px;
+}
+
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.completa
+div.base{
+	display: none;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.completa
+div.tolMax{
+	display: none;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.completa
+div.tolMin{
+	display: none;
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.completa
+div.precision{
+	display: none;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.anterior{
+	border-left: solid 5px rgb(100, 100, 130);
+	/*TODO estilo de la inmediata anterior*/
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.anterior
+div.valorMedicion{
+	right: 40px;
+	top: 5px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.paso{
+	background-color: rgb(170,230,170);
+	border-bottom-color: rgb(140,200,140);
+}
+
+.pantalla_medicion
+ul.lista_cotas
+li.no_paso{
+	background-color: rgb(230,170,170);
+	border-bottom-color: rgb(200,140,140);
+}
+
+
+.pantalla_medicion
+ul.lista_cotas
+li.cota
+svg.regla{
+	/*position: absolute;
+	left: 20px;
+	top: 20px;*/
+	
+	width: 100%;
+	height: 50px;
+	border: solid 1px;
+	display: none;
 }
