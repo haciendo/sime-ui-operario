@@ -6,10 +6,12 @@
         
         <link rel="stylesheet" href="main.css" />
         <link rel="stylesheet" href="pantalla_login.css" />
+        <link rel="stylesheet" href="pantalla_online.css" />
         <link rel="stylesheet" href="barra_superior.css" />
         <link rel="stylesheet" href="pantalla_seleccion_tipopieza.css" />
         <link rel="stylesheet" href="pantalla_instrumentos.css" />
-        <link rel="stylesheet" href="pantalla_medicion.css" />
+        <link rel="stylesheet" href="pantalla_lista_cotas.css" />
+		
 
 		<title>UI Operario</title>
 	</head>
@@ -23,37 +25,86 @@
 			<input id="boton_ingresar" type="button" value="Entrar"/>
 		</div>
 		
-		<div id="barra_superior">
-			<div id="mensaje">
-			</div>
-			<div id="link_salir" class="link_pantalla">
-				X
-			</div>
-			<div id="link_pantalla_instrumentos" class="link_pantalla">
-				I
-			</div>
-			<div id="link_pantalla_seleccion_tipopieza" class="link_pantalla">
-				P
+		<div id="panel_uno" class="panel">
+			<div id="pantalla_online" class="pantalla">
+				<div id="panel_cota_anterior">
+					<div class="desc_cota">
+						Nueve nueve nueve
+					</div>
+					<div class="desc_tipopieza">
+						Pieze pieze pieze
+					</div>
+					<div class="unidad">
+						nn
+					</div>
+					<div class="valorMedicion">
+						99.999
+					</div>
+					<svg class="regla" >
+					</svg>
+				</div>
+				<div id="panel_cota_siguiente">
+					<div class="desc_cota">
+						Nueve nueve nueve
+					</div>
+					<div class="desc_tipopieza">
+						Pieze pieze pieze
+					</div>
+					<div class="unidad">
+						nn
+					</div>
+					<div class="base">
+						0.009
+					</div>
+					<div class="tolMax">
+						0.009
+					</div>
+					<div class="tolMin">
+						0.009
+					</div>
+					<div class="precision">
+						0.009
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<div id="pantalla_seleccion_tipopieza" class="pantalla">
-			<input class="textoBusqueda" placeholder="Buscar tipos de pieza aquí"/>
-			<ul class="lista_tipopiezas lista">
+		<div id="panel_dos" class="panel">
+			<div id="barra_superior">
+				<div id="mensaje">
+				</div>
+				<div id="link_salir" class="link_pantalla">
+					X
+				</div>
+				<div id="link_pantalla_instrumentos" class="link_pantalla">
+					I
+				</div>
+				<div id="link_pantalla_seleccion_tipopieza" class="link_pantalla">
+					P
+				</div>
+			</div>
 			
-			</ul>
+			<div id="pantalla_seleccion_tipopieza" class="pantalla">
+				<input class="textoBusqueda" placeholder="Buscar tipos de pieza aquí"/>
+				<ul class="lista_tipopiezas lista">
+				
+				</ul>
+			</div>
+			
+			<div id="pantalla_instrumentos" class="pantalla">
+				<input class="textoBusqueda" placeholder="Agregar instrumentos por aquí"/>
+				<ul class="lista_instrumentos lista">
+				
+				</ul>
+			</div>
 		</div>
 		
-		<div id="pantalla_instrumentos" class="pantalla">
-			<input class="textoBusqueda" placeholder="Agregar instrumentos por aquí"/>
-			<ul class="lista_instrumentos lista">
-			
-			</ul>
-		</div>
+		
+		
 		
 		<div id="plantillas">
 			
-			<div id="plantilla_pantalla_medicion" class="pantalla pantalla_medicion">
+			<div id="plantilla_pantalla_lista_cotas" class="pantalla pantalla_lista_cotas">
 				<div class="toolbar">
 					<img class="flecha_izq" src="flecha_izq.png">
 					</img>
@@ -71,7 +122,7 @@
 			</div>
 			
 			
-			<li id="plantilla_cota" class="cota">
+			<li id="plantilla_cota_item" class="cota">
 				<div class="desc_cota">
 					Descripcion de la cota de ejemplo
 				</div>
@@ -120,10 +171,11 @@
 	
 	<script type="text/javascript" src="main.js"></script> 
 	
-	<script type="text/javascript" src="pantalla_login.js"></script> 
+	<script type="text/javascript" src="pantalla_login.js"></script>
+	<script type="text/javascript" src="pantalla_online.js"></script>
 	<script type="text/javascript" src="pantalla_instrumentos.js"></script>
 	<script type="text/javascript" src="pantalla_seleccion_tipopieza.js"></script> 
-	<script type="text/javascript" src="pantalla_medicion.js"></script> 
+	<script type="text/javascript" src="pantalla_lista_cotas.js"></script> 
 	<script type="text/javascript" src="barra_superior.js"></script> 
     
     <script type="text/javascript" src="phonegap.js"></script>

@@ -1,6 +1,8 @@
 var pantalla_instrumentos = function() {
 	
-	var $pantalla = $('#pantalla_instrumentos');
+	var me = this;
+	
+	me.ui = $('#pantalla_instrumentos');
 	
 	
 	
@@ -11,7 +13,7 @@ var pantalla_instrumentos = function() {
 					.attr('id', 'idInstrumento_' + instrumento.idInstrumento);
 		
 		
-		$pantalla.find('.lista_instrumentos').append($instrumento);
+		me.ui.find('.lista_instrumentos').append($instrumento);
 		$instrumento.show();
 		
 		$instrumento.text(instrumento.descripcion);
@@ -34,14 +36,14 @@ var pantalla_instrumentos = function() {
 		},function(mensaje){
 			
 			if(piezaSelected){
-				piezaSelected.pantalla_medicion.recibirMedicionAislada(mensaje);
+				piezaSelected.pantalla_lista_cotas.recibirMedicionAislada(mensaje);
 			}
 		});
 		
 	};
 	
 	
-	$pantalla.find('.lista_instrumentos').empty();
+	me.ui.find('.lista_instrumentos').empty();
 	_.each(datos.instrumentos, function(instrumento){
 		agregarInstrumento(instrumento);
 	});

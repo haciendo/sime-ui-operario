@@ -1,10 +1,5 @@
-Pantalla Medición:
-- al traer las cotas, poner tantos <li> como cotas haya.
-- hacer una funcion de renderizado que se le pase la cotaActual
-	+ graficar la actual en el último <li>, seguir para arriba con el orden que tengan.
-	+ poner un orden default al agregar las cotas, luego se debería poder cambiar.
-- llamar a la funcion de renderizado para todas las cotas cada vez que cambia la actual
-- probar
-- seguir con los estilos
+- agregar pantalla_online
+- splitear la view
+- hacer css para apaisado y para vertical
 	
 

@@ -1,0 +1,154 @@
+#pantalla_online{
+	top: 0px;
+	display: initial;
+}
+
+
+#pantalla_online
+#panel_cota_anterior {
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 50%;
+	background-color: rgb(200,200,200);
+	
+}
+
+#pantalla_online
+#panel_cota_siguiente{
+	background-color: rgb(170,170,230);
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	bottom: 0px;
+	background-color: rgb(200,200,200);
+}
+
+
+#pantalla_online
+#panel_cota_anterior
+.paso{
+	background-color: rgb(170,230,170);
+	border-bottom-color: rgb(140,200,140);
+}
+
+#pantalla_online
+#panel_cota_anterior
+.no_paso{
+	background-color: rgb(230,170,170);
+	border-bottom-color: rgb(200,140,140);
+}
+
+
+
+#pantalla_online
+#panel_cota_anterior
+div.desc_tipopieza{
+	position: absolute;
+	left: 3px;
+	top: 0px;
+	font-weight: bold;
+}
+
+#pantalla_online
+#panel_cota_anterior
+div.desc_cota{
+	position: absolute;
+	left: 3px;
+	top: 17px;
+	font-weight: bold;
+}
+#pantalla_online
+#panel_cota_anterior
+div.unidad{
+	position: absolute;
+	left: 50%;
+	padding-left: 4px;
+	top: 50%;
+	bottom: 0px;
+}
+
+#pantalla_online
+#panel_cota_anterior
+div.valorMedicion{
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	bottom: 0px;
+}
+
+#pantalla_online
+#panel_cota_anterior
+div.regla{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	bottom: 0px;
+}
+
+
+#pantalla_online
+#panel_cota_siguiente
+div.desc_tipopieza{
+	position: absolute;
+	left: 3px;
+	top: 0px;
+	font-weight: bold;
+}
+
+#pantalla_online
+#panel_cota_siguiente
+div.desc_cota{
+	position: absolute;
+	left: 3px;
+	top: 17px;
+	font-weight: bold;
+}
+
+#pantalla_online
+#panel_cota_siguiente
+div.unidad{
+	position: absolute;
+	left: 50%;
+	padding-left: 4px;
+	top: 50%;
+	bottom: 0px;
+}
+#pantalla_online
+#panel_cota_siguiente
+div.base{
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	bottom: 0px;
+}
+#pantalla_online
+#panel_cota_siguiente
+div.tolMax{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	bottom: 0px;
+}
+#pantalla_online
+#panel_cota_siguiente
+div.tolMin{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	bottom: 0px;
+}
+#pantalla_online
+#panel_cota_siguiente
+div.precision{
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 50%;
+	bottom: 0px;
+}

@@ -1,5 +1,5 @@
 
-.pantalla_medicion
+.pantalla_lista_cotas
 div.toolbar{
 	position: absolute;
 	left: 0px;
@@ -7,7 +7,7 @@ div.toolbar{
 	height: 25px;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 div.toolbar
 div.desc_pieza{
 	position: absolute;
@@ -19,7 +19,7 @@ div.desc_pieza{
 	text-align: center;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 div.toolbar
 img.flecha_izq{
 	position: absolute;
@@ -28,7 +28,7 @@ img.flecha_izq{
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 div.toolbar
 img.flecha_der{
 	position: absolute;
@@ -36,7 +36,7 @@ img.flecha_der{
 	right: 3px;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 div.lista_cotas_container{
 	position: absolute;
 	top: 25px;
@@ -48,7 +48,7 @@ div.lista_cotas_container{
 	overflow-y:scroll;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas{
 	position: absolute;
 	top: 0px;
@@ -58,7 +58,7 @@ ul.lista_cotas{
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.cota {
 	background-color: rgb(200,200,200);
@@ -69,14 +69,14 @@ li.cota {
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.cota 
 div.valorMedicion{
 	display: none;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.cota
 div.unidad{
@@ -87,19 +87,19 @@ div.unidad{
 
 
 
-/*:ACTUAL:*/
+/*:SIGUIENTE:*/
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
-li.actual{
+li.siguiente{
 	background-color: rgb(170,170,230);
 	border-bottom-color: rgb(140,140,200);
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
-li.cota/*actual*/
+li.cota/*siguiente*/
 div.base{
 	display: initial;
 	position: absolute;
@@ -107,9 +107,9 @@ div.base{
 	top: 20px;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
-li.cota/*actual*/
+li.cota/*siguiente*/
 div.tolMax{
 	display: initial;
 	position: absolute;
@@ -117,9 +117,9 @@ div.tolMax{
 	top: 15px;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
-li.cota/*actual*/
+li.cota/*siguiente*/
 div.tolMin{
 	display: initial;
 	position: absolute;
@@ -128,9 +128,9 @@ div.tolMin{
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
-li.cota/*actual*/
+li.cota/*siguiente*/
 div.precision{
 	display: initial;
 	position: absolute;
@@ -140,7 +140,7 @@ div.precision{
 
 
 /*:COMPLETA:*/
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.completa
 div.valorMedicion{
@@ -153,21 +153,21 @@ div.valorMedicion{
 
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.completa
 div.base{
 	display: none;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.completa
 div.tolMax{
 	display: none;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.completa
 div.tolMin{
@@ -175,21 +175,21 @@ div.tolMin{
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.completa
 div.precision{
 	display: none;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.anterior{
 	border-left: solid 5px rgb(100, 100, 130);
 	/*TODO estilo de la inmediata anterior*/
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.anterior
 div.valorMedicion{
@@ -199,14 +199,14 @@ div.valorMedicion{
 	font-size: 30px;
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.paso{
 	background-color: rgb(170,230,170);
 	border-bottom-color: rgb(140,200,140);
 }
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.no_paso{
 	background-color: rgb(230,170,170);
@@ -214,7 +214,7 @@ li.no_paso{
 }
 
 
-.pantalla_medicion
+.pantalla_lista_cotas
 ul.lista_cotas
 li.cota
 svg.regla{

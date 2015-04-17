@@ -27,13 +27,13 @@ var pantalla_seleccion_tipopieza = function() {
 		$tipoPieza.on('click', function(){
 			
 			
-			$('#pantalla_medicion').hide();
+			$('#pantalla_lista_cotas').hide();
 			
-			if(tipoPieza.pantalla_medicion === undefined){
-				tipoPieza.pantalla_medicion = new pantalla_medicion(tipoPieza);
+			if(tipoPieza.pantalla_lista_cotas === undefined){
+				tipoPieza.pantalla_lista_cotas = new pantalla_lista_cotas(tipoPieza);
 				
 			} else {
-				tipoPieza.pantalla_medicion.show();
+				tipoPieza.pantalla_lista_cotas.show();
 			}
 			
 			piezaSelected = tipoPieza;

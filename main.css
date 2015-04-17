@@ -21,3 +21,70 @@ div.pantalla{
 #plantillas{
 	display: none;
 }
+
+#panel_uno{
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 0px;
+	right: 50%;
+	bottom: 0px;
+	
+	background-color: rgb(246, 178, 246);
+}
+#panel_dos{
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 50%;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgb(246, 0, 246);
+}
+
+@media screen and (max-height: 360px) and (min-width: 360px){
+	#panel_uno{
+		top: 0px;
+		left: 0px;
+		right: 50%;
+		bottom: 0px;
+	}
+	#panel_dos{
+		top: 0px;
+		left: 50%;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+ 	#panel_uno{
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 50%;
+	}
+	#panel_dos{
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 360px) and (min-height: 360px){
+	#panel_uno{
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 50%;
+	}
+	#panel_dos{
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+
