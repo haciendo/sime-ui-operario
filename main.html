@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="main.css" />
-        <link rel="stylesheet" href="pantalla_login.css" />
-        <link rel="stylesheet" href="pantalla_online.css" />
-        <link rel="stylesheet" href="barra_superior.css" />
-        <link rel="stylesheet" href="pantalla_seleccion_tipopieza.css" />
-        <link rel="stylesheet" href="pantalla_instrumentos.css" />
-        <link rel="stylesheet" href="pantalla_lista_cotas.css" />
+        <link rel="stylesheet" href="sime_pantalla_login.css" />
+        <link rel="stylesheet" href="sime_pantalla_online.css" />
+        <link rel="stylesheet" href="sime_barra_superior.css" />
+        <link rel="stylesheet" href="sime_pantalla_seleccion_tipoDePieza.css" />
+        <link rel="stylesheet" href="sime_pantalla_instrumentos.css" />
+        <!--link rel="stylesheet" href="pantalla_lista_cotas.css" /-->
 		
 
 		<title>UI Operario</title>
@@ -27,11 +27,11 @@
 		
 		<div id="panel_uno" class="panel">
 			<div id="pantalla_online" class="pantalla">
-				<div id="panel_cota_anterior">
+				<div class="panel panel_cota_anterior">
 					<div class="desc_cota">
 						Nueve nueve nueve
 					</div>
-					<div class="desc_tipopieza">
+					<div class="desc_tipoDePieza">
 						Pieze pieze pieze
 					</div>
 					<div class="unidad">
@@ -43,11 +43,11 @@
 					<svg class="regla" >
 					</svg>
 				</div>
-				<div id="panel_cota_siguiente">
+				<div class="panel panel_cota_siguiente">
 					<div class="desc_cota">
 						Nueve nueve nueve
 					</div>
-					<div class="desc_tipopieza">
+					<div class="desc_tipoDePieza">
 						Pieze pieze pieze
 					</div>
 					<div class="unidad">
@@ -79,14 +79,14 @@
 				<div id="link_pantalla_instrumentos" class="link_pantalla">
 					I
 				</div>
-				<div id="link_pantalla_seleccion_tipopieza" class="link_pantalla">
+				<div id="link_pantalla_seleccion_tipoDePieza" class="link_pantalla">
 					P
 				</div>
 			</div>
 			
-			<div id="pantalla_seleccion_tipopieza" class="pantalla">
+			<div id="pantalla_seleccion_tipoDePieza" class="pantalla">
 				<input class="textoBusqueda" placeholder="Buscar tipos de pieza aquí"/>
-				<ul class="lista_tipopiezas lista">
+				<ul class="lista_tiposDePieza lista">
 				
 				</ul>
 			</div>
@@ -149,7 +149,7 @@
 			</li>
 			
 			
-			<li id="plantilla_tipopieza" class="tipopieza">
+			<li id="plantilla_tipoDePieza" class="tipoDePieza">
 				Descripcion del tipo de pieza de ejemplo
 			</li>
 			
@@ -160,24 +160,26 @@
 		
 	</body>
     
-    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="underscore-min.js"></script> 
-    <script type="text/javascript" src="Cryptico.min.js"></script>
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="underscore-min.js"></script> 
+	<script type="text/javascript" src="Cryptico.min.js"></script>
 	<script type="text/javascript" src="socket.io.js"></script>
-    
+	<script type="text/javascript" src="moment.js"></script>
+
 	<script type="text/javascript" src="vortex.min.js"></script> 
-	
-    <script type="text/javascript" src="snap.svg-min.js"></script>
-	
+
+	<script type="text/javascript" src="snap.svg-min.js"></script>
+
 	<script type="text/javascript" src="main.js"></script> 
-	
-	<script type="text/javascript" src="pantalla_login.js"></script>
-	<script type="text/javascript" src="pantalla_online.js"></script>
-	<script type="text/javascript" src="pantalla_instrumentos.js"></script>
-	<script type="text/javascript" src="pantalla_seleccion_tipopieza.js"></script> 
-	<script type="text/javascript" src="pantalla_lista_cotas.js"></script> 
-	<script type="text/javascript" src="barra_superior.js"></script> 
-    
-    <script type="text/javascript" src="phonegap.js"></script>
+
+	<script type="text/javascript" src="sime_gestor_medicion.js"></script>
+	<script type="text/javascript" src="sime_pantalla_login.js"></script>
+	<script type="text/javascript" src="sime_pantalla_online.js"></script>
+	<script type="text/javascript" src="sime_pantalla_instrumentos.js"></script>
+	<script type="text/javascript" src="sime_pantalla_seleccion_tipoDePieza.js"></script> 
+	<!--script type="text/javascript" src="sime_pantalla_lista_cotas.js"></script--> 
+	<script type="text/javascript" src="sime_barra_superior.js"></script> 
+
+	<script type="text/javascript" src="phonegap.js"></script>
 </html>
 

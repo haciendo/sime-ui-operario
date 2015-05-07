@@ -1,5 +1,2 @@
-- agregar pantalla_online
-- splitear la view
-- hacer css para apaisado y para vertical
-	
+- correr una vuelta de depuración
 

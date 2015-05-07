@@ -4,64 +4,61 @@
 }
 
 
-#pantalla_online
-#panel_cota_anterior {
+#pantalla_online >
+div.panel_cota_anterior{
 	position: absolute;
 	right: 0px;
 	left: 0px;
 	top: 0px;
 	bottom: 50%;
 	background-color: rgb(200,200,200);
-	
 }
 
-#pantalla_online
-#panel_cota_siguiente{
-	background-color: rgb(170,170,230);
+
+#pantalla_online >
+div.panel_cota_siguiente{
 	position: absolute;
 	right: 0px;
 	left: 0px;
 	top: 50%;
 	bottom: 0px;
-	background-color: rgb(200,200,200);
+	background-color: rgb(170,170,230);
 }
 
 
-#pantalla_online
-#panel_cota_anterior
-.paso{
+#pantalla_online >
+div.panel_cota_si_paso{
 	background-color: rgb(170,230,170);
 	border-bottom-color: rgb(140,200,140);
 }
 
-#pantalla_online
-#panel_cota_anterior
-.no_paso{
+#pantalla_online >
+div.panel_cota_no_paso{
 	background-color: rgb(230,170,170);
 	border-bottom-color: rgb(200,140,140);
 }
 
 
 
-#pantalla_online
-#panel_cota_anterior
-div.desc_tipopieza{
+#pantalla_online >
+div.panel_cota_anterior
+div.desc_tipoDePieza{
 	position: absolute;
 	left: 3px;
 	top: 0px;
 	font-weight: bold;
 }
 
-#pantalla_online
-#panel_cota_anterior
+#pantalla_online >
+div.panel_cota_anterior
 div.desc_cota{
 	position: absolute;
 	left: 3px;
 	top: 17px;
 	font-weight: bold;
 }
-#pantalla_online
-#panel_cota_anterior
+#pantalla_online >
+div.panel_cota_anterior
 div.unidad{
 	position: absolute;
 	left: 50%;
@@ -70,8 +67,8 @@ div.unidad{
 	bottom: 0px;
 }
 
-#pantalla_online
-#panel_cota_anterior
+#pantalla_online >
+div.panel_cota_anterior
 div.valorMedicion{
 	position: absolute;
 	right: 50%;
@@ -79,8 +76,8 @@ div.valorMedicion{
 	bottom: 0px;
 }
 
-#pantalla_online
-#panel_cota_anterior
+#pantalla_online >
+div.panel_cota_anterior
 div.regla{
 	position: absolute;
 	right: 0px;
@@ -90,17 +87,17 @@ div.regla{
 }
 
 
-#pantalla_online
-#panel_cota_siguiente
-div.desc_tipopieza{
+#pantalla_online >
+div.panel_cota_siguiente
+div.desc_tipoDePieza{
 	position: absolute;
 	left: 3px;
 	top: 0px;
 	font-weight: bold;
 }
 
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+div.panel_cota_siguiente
 div.desc_cota{
 	position: absolute;
 	left: 3px;
@@ -108,8 +105,8 @@ div.desc_cota{
 	font-weight: bold;
 }
 
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+div.panel_cota_siguiente
 div.unidad{
 	position: absolute;
 	left: 50%;
@@ -117,16 +114,16 @@ div.unidad{
 	top: 50%;
 	bottom: 0px;
 }
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+div.panel_cota_siguiente
 div.base{
 	position: absolute;
 	right: 50%;
 	top: 50%;
 	bottom: 0px;
 }
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+.panel_cota_siguiente
 div.tolMax{
 	position: absolute;
 	right: 0px;
@@ -134,8 +131,8 @@ div.tolMax{
 	top: 50%;
 	bottom: 0px;
 }
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+div.panel_cota_siguiente
 div.tolMin{
 	position: absolute;
 	right: 0px;
@@ -143,8 +140,8 @@ div.tolMin{
 	top: 50%;
 	bottom: 0px;
 }
-#pantalla_online
-#panel_cota_siguiente
+#pantalla_online >
+div.panel_cota_siguiente
 div.precision{
 	position: absolute;
 	right: 0px;

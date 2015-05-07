@@ -1,0 +1,42 @@
+query
+{
+"k":"NckpySnk9ejreWeZLULSZFzH-4RTQ6GM",
+"db":"sime-backend",
+"col":"tiposDePieza",
+"q":{"descripcion": "pirulo a contratuerca"}
+}
+
+
+update
+{
+$set:{"cotas":[
+      {
+        "idCota": 1,
+        "descripcion": "Largol",
+        "base": 15.5,
+        "tolMax": 0.5,
+        "tolMin": 0.5,
+        "unidad": "cm",
+        "precision": 0.01
+      },
+{
+        "idCota": 2,
+        "descripcion": "Anchor",
+        "base": 15.5,
+        "tolMax": 0.5,
+        "tolMin": 0.5,
+        "unidad": "cm",
+        "precision": 0.01
+      },
+{
+        "idCota": 2,
+        "descripcion": "Estupor medio",
+        "base": 15.5,
+        "tolMax": 0.5,
+        "tolMin": 0.5,
+        "unidad": "cm",
+        "precision": 0.01
+      }
+
+    ]}
+}

@@ -1,19 +1,14 @@
-var datos = {
-	idUsuario: null,
-	instrumentos: []
-};
 
 var pantalla_login = function() {
-	var me = this;
 	
-	me.ui = $('#pantalla_login');
+	var ui = $('#pantalla_login');
 	
-	me.ui.show();
+	ui.show();
 	
-	me.ui.find('#boton_ingresar').on('click', function(){
+	ui.find('#boton_ingresar').on('click', function(){
 		
 		var clavePublica;
-		clavePublica = me.ui.find('#nombre').val() + me.ui.find('#pass').val();
+		clavePublica = ui.find('#nombre').val() + ui.find('#pass').val();
 		clavePublica = "aaa";
 		//TODO: generar clavePublica con cryptico
 		
@@ -28,27 +23,21 @@ var pantalla_login = function() {
 				datos.instrumentos = mensaje.instrumentos;
 				
 				
-				/****** CREO LAS PANTALLAS ********/
+				/****** CREO LOS OBJETOS ********/
 				pantalla_online();
 				
-				pantalla_seleccion_tipopieza();
+				pantalla_seleccion_tipoDePieza();
 				pantalla_instrumentos();
-				
 				
 				barra_superior();
 				
-				console.log('que es estxddddo???????', me.ui.html());
-				//me.ui.hide();
-				
-				
-				
-				
+				ui.hide();
 				$('.panel').show();
 				
 				
 				/*** START POINT ***/
+				$('#link_pantalla_seleccion_tipoDePieza').click();
 				
-				$('#link_pantalla_seleccion_tipopieza').click();
 			}
 		});
 	
